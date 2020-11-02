@@ -2,27 +2,6 @@ body {
   direction: rtl;
 }
 
-@media (max-width: 1024px) {
-  html,
-  body {
-      font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 768px) {
-  html,
-  body {
-      font-size: 1rem;
-  }
-}
-
-@media (max-width: 575px) {
-  html,
-  body {
-      font-size: 1.2rem;
-  }
-}
-
 header .previ,
 header .next {
   border: 3px solid #f8aa1b;
@@ -106,6 +85,7 @@ header ol {
 .services .positionImg {
   position: relative;
   right: 50px;
+  text-align: center;
 }
 .services .green {
   color: green;
@@ -267,7 +247,7 @@ header .overlay {
   z-index: -6;
 }*/
 .videoo .para {
-  width: 150%;
+  width: 100%;
 }
 .videoo .para p{
   font-size: 1.5rem;
@@ -279,9 +259,11 @@ header .overlay {
   z-index: -8888;
 }
 .videoo .overlay{
+  transform: translate(-68px, 445px);
+/*
   position: absolute;
   top: 300px;
-  left: -60px;
+  left: -60px;*/
 }
 .videoo .overlay p{
   font-size: 5rem;
@@ -297,15 +279,16 @@ header .overlay {
   margin-top: 70px;
   display: flex;
   color: #000;
-  position: relative;
   margin: auto;
   font-weight: 500;
 }
 .videoo .ic1 {
-  position: absolute;
+  transform: translate(475px, -26px);
+  font-size: 1.4rem;
+  /*position: absolute;
   left: 495px;
   bottom: 6px;
-  /*transform: translate(-50px ,50px);*/
+  transform: translate(-50px ,50px);*/
   cursor: pointer;
   color: #000;
 }
@@ -365,18 +348,19 @@ header .overlay {
   border: 1px solid #f8aa1b;
   border-radius: 15px;
   padding: 2px 32px;
-  margin-right: 10px;
-  margin-top: 70px;
+  /*margin-right: 10px;
+  margin-top: 70px;*/
   display: flex;
   color: #000;
-  position: relative;
   margin: auto;
   font-weight: 500;
 }
 .details .ic1 {
+  transform: translate(-71px, -25px);
+  font-size: 1.4rem;
+  /*right: 70px;
   position: relative;
-  right: 70px;
-  bottom: 21px;
+  bottom: 21px;*/
   cursor: pointer;
   color: #000;
 }
@@ -423,6 +407,8 @@ header .overlay {
   border-radius: 15px;
   padding: 2px 32px;
   margin-right: 10px;
+  margin-bottom: 10px;
+
   color: #000;
   position: relative;
 }
@@ -432,10 +418,14 @@ header .overlay {
 .about p {
   font-weight: 500;
 }
+.about h2 {
+  margin-top: 10px;
+}
 .about i {
-  position: absolute;
-  left: 60px;
-  bottom: 29px;
+  font-size: 1.4rem;
+  transform: translate(9px, 0px);
+  /*left: 63px;
+  bottom: 19px;*/
   cursor: pointer;
 }
 .about clr {
@@ -483,7 +473,6 @@ a {
   z-index: 100;
   background-color: #f8aa1b;
   border: 1px solid #000;
-
   color: #000;
 }
 
@@ -504,3 +493,53 @@ footer a {
   color: #fff;
   padding-left: 0.5rem;
 }
+
+@media (max-width: 1024px) {
+  html,
+  body {
+      font-size: 0.7rem;
+  }
+  .details .ic1 {
+    transform: translate(-60px, -18px);
+  }
+  .videoo .ic1 {
+    transform: translate(279px, -18px);
+  }
+  .videoo .overlay{
+    transform: translate(-68px, 445px);
+  }
+  
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+      font-size: 1rem;
+  }
+  .details .ic1 {
+    transform: translate(-71px, -25px);
+  }
+  .videoo .ic1 {
+    transform: translate(176px, -24px);
+  }
+  .videoo .overlay{
+    transform: translate(-68px, 325px);
+  }
+}
+
+@media (max-width: 575px) {
+  html,
+  body {
+      font-size: 1.2rem;
+  }
+  .details .ic1 {
+    transform: translate(-78px, -29px);
+  }
+  .videoo .ic1 {
+    transform: translate(135px, -28px);    
+  }
+  .videoo .overlay{
+    transform: translate(-2px, 333px);
+  }
+}
+
