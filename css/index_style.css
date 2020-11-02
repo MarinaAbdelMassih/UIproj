@@ -1,74 +1,71 @@
-body{
-    direction: rtl;
+body {
+  direction: rtl;
 }
 
 @media (max-width: 1024px) {
-
-    html,
-    body {
+  html,
+  body {
       font-size: 0.7rem;
-    }
   }
-  
-  
-  @media (max-width: 768px) {
-  
-    html,
-    body {
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
       font-size: 1rem;
-    }
   }
-  
-  @media (max-width: 575px) {
-  
-    html,
-    body {
+}
+
+@media (max-width: 575px) {
+  html,
+  body {
       font-size: 1.2rem;
-    }
   }
+}
 
- header .previ , header .next{
+header .previ,
+header .next {
   border: 3px solid #f8aa1b;
-    padding: 15px;
-   border-radius: 50%;
-   position: relative;
- }
+  padding: 15px;
+  border-radius: 50%;
+  position: relative;
+}
 
- header .previ i{
+header .previ i {
   position: absolute;
   right: 27px;
   top: 8px;
   cursor: pointer;
   color: #fff;
- }
+}
 
- header .next i{
+header .next i {
   position: absolute;
   left: 27px;
   top: 8px;
   cursor: pointer;
   color: #fff;
- }
-.carousel-item .carousel-caption {
-    position: absolute;
-    top: 400px !important;
-    right: 12% !important;
-    bottom: 0px;
-    left: 0%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: start;
 }
- header .btn {
+.carousel-item .carousel-caption {
+  position: absolute;
+  top: 400px !important;
+  right: 12% !important;
+  bottom: 0px;
+  left: 0%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: start;
+}
+header .btn {
   background-color: transparent;
   border: 1px solid #f8aa1b;
   border-radius: 15px;
   padding: 2px 32px;
   margin-right: 10px;
   margin-top: 70px;
- display: flex;
+  display: flex;
   color: #fff;
   position: relative;
   margin: auto;
@@ -81,65 +78,56 @@ header .ic1 {
   color: #fff;
 }
 
-header ol{
+header ol {
   padding-bottom: 150px;
 }
 
-
-  .services img{
-    width: 210px;
-    height: 295px;
-    position: relative;
-  }
-  .services .container{
+.services img {
+  width: 210px;
+  height: 295px;
+  position: relative;
+}
+.services .container {
   position: relative;
   bottom: 140px;
   background-color: #fff;
-  }
-  .services .serv{
-    color:#fff;
-    position: absolute;
-    bottom: 20px;
-    left: 70px;
-  }
-  .services .positionImg{
-    position: relative;
-    right: 50px;
-  }
-  .services .green{
-    color: green;
-  }
+}
+.services .serv {
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 70px;
+}
+.services .positionImg {
+  position: relative;
+  right: 50px;
+}
+.services .green {
+  color: green;
+}
 
-  .services .but {
-    background-color: transparent;
-    border: 1px solid #f8aa1b;
-    border-radius: 15px;
-    padding: 2px 32px;
-    margin-right: 10px;
-    margin-top: 70px;
-   display: flex;
-    color: #000;
-    position: relative;
-  }
-  .services .ic1 {
-    position: relative;
-    left: 97px;
-    bottom: 21px;
-    cursor: pointer;
-    color: green;
-  }
-
-
+.services .but {
+  background-color: transparent;
+  border: 1px solid #f8aa1b;
+  border-radius: 15px;
+  padding: 2px 32px;
+  margin-right: 10px;
+  margin-top: 70px;
+  display: flex;
+  color: #000;
+  position: relative;
+}
+.services .ic1 {
+  position: relative;
+  left: 97px;
+  bottom: 21px;
+  cursor: pointer;
+  color: green;
+}
 
 /**/
 
-Edit in JSFiddle
-Result
-HTML
-CSS
-JavaScript
-Resources
-header {
+Edit in JSFiddle Result HTML CSS JavaScript Resources header {
   position: relative;
   background-color: black;
   height: 75vh;
@@ -178,45 +166,36 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+      background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll;
   }
   header video {
-    display: none;
+      display: none;
   }
 }
 
-
-
-
-
-
-
-
-
-
 /**/
 
- .econmic{
-   background-image: url(../images/pp1.jpg);
-   background-size: cover;
- }
- .econmic .bgdata{
+.econmic {
+  background-image: url(../images/pp1.jpg);
+  background-size: cover;
+}
+.econmic .bgdata {
   background-color: #ffe424;
   padding: 50px 30px;
   margin: 50px 0px;
- }
- .econmic .icon{
+}
+.econmic .icon {
   color: green;
   font-size: 1.5rem;
- }
- .econmic .but {
+}
+.econmic .but {
   background-color: transparent;
   border: 1px solid #f8aa1b;
   border-radius: 15px;
   padding: 2px 32px;
   margin-right: 10px;
   margin-top: 70px;
- display: flex;
+  display: flex;
   color: #fff;
   position: relative;
 }
@@ -228,201 +207,177 @@ header .overlay {
   color: #fff;
 }
 
-
-
-
-  .details{
-      position: relative;
-      top:150px;
-      z-index: 9999999;
-  }
-  .details .container
-  {          
-        box-shadow: 10px 10px 6px 6px lightgray;
-  }
-  .details .row{
-    border: 1px dashed;
-    padding: 30px;
-    margin: 40px;
-    border-top: 1px transparent;
-    border-left: 1px transparent;
-  }
-  
-
-  .details .decoration{
-    background-color: #f8aa1b;
-    border-radius: 50%;
-    padding: 40px 0px;
-    width: 92%;
-    margin: auto;
-  }
-  .details .outBrdr{
-    border: 2px solid lightgrey;
-    padding: 6px 0px;
-    margin: auto;
-    border-radius: 50%;
-    width: 95%;
-    
+.details {
+  position: relative;
+  top: 150px;
+  z-index: 9999999;
 }
-.details .out2::before{
-    content: "";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background-color: #000;
-    border-radius: 50%;
-
+.details .container {
+  box-shadow: 10px 10px 6px 6px lightgray;
+}
+.details .row {
+  border: 1px dashed;
+  padding: 30px;
+  margin: 40px;
+  border-top: 1px transparent;
+  border-left: 1px transparent;
 }
 
-.details .out2{
-    border: 1px dashed grey;
-    border-left: 1px solid transparent;
-    padding: 6px 0px;
-    margin: auto;
-    border-radius: 50%;
-    width: 60%;
-    position: relative;
-    
+.details .decoration {
+  background-color: #f8aa1b;
+  border-radius: 50%;
+  padding: 40px 0px;
+  width: 92%;
+  margin: auto;
 }
-  
-
-
-
-
-
-  .info{
-    background-color: #3026260a;
-    padding: 200px 0px 50px 0px;
-  }
-
-  .info .circle
-  {
-      width: 20px;
-      height: 20px;
-      background-color: #f8aa1b;
-      border-radius: 50%;
-      border: 1px dashed lightgray;
-      margin: 10px 0px;
-  }
-  .info button{
-    background: none;
-    border: 1px dashed;
-    border-radius: 50%;
-    position: relative;
-  }
-  .info .brdr{
-    margin: auto;
-    position: relative;
-    top: 24px;
-    border: 1px dashed lightgray;
-    z-index: -999;
-    
-  }
-  
-  .info .infoYear{
-    bottom: 35px;
-    position: absolute;
-    font-size: 1.1rem;
-  }
-
- .about .head{
-    color: limegreen;
- }
- .about .btn {
-    background-color: transparent;
-    border: 1px solid #f8aa1b;
-    border-radius: 15px;
-    padding: 2px 32px;
-    margin-right: 10px;
-    color: #000;
-    position: relative;
- }
- .about img{
-     height: 210px;
- }
- .about p{
-     font-weight: 500;
- }
- .about i {
-    position: absolute;
-    left: 60px;
-    bottom: 29px;
-    cursor: pointer;
- }
- .about clr{
-     clear: both;
- }
-
-
-
-
-
-
-
-
-
-  .contactus{   
-       background-color: #0372b4;
-  }
-  .contactus h4{ color: #f8aa1b;}
-  .contactus p , a{ color: #fff;}
-  .contactus input{
-    width: 30%;
-    border-radius: 15px;
-    border: 1px solid transparent;
-  }
-  .contactus ::placeholder{
-      padding: 10px;
-      color:#000;
-  }
-  .contactus button {
-    background-color: transparent;
-    border: 1px solid #f8aa1b;
-    border-radius: 15px;
-    padding: 2px 32px;
-    margin-right: 10px;
-    color: #fff;
-    position: relative;
-  }
-  .contactus .icon {
-    position: relative;
-    left: 6px;
-    cursor: pointer;
-    color: #fff;
- }
- .contactus #btnUp
-{
-    position: fixed;
-    bottom: 350px;
-    left: 50px;
-    z-index: 100;
-    background-color: #f8aa1b;
-    border: 1px solid #000;
-
-    color: #000;
-
+.details .outBrdr {
+  border: 2px solid lightgrey;
+  padding: 6px 0px;
+  margin: auto;
+  border-radius: 50%;
+  width: 95%;
+}
+.details .out2::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #000;
+  border-radius: 50%;
 }
 
-
-
-footer{
-    background-color: #0069a7;
-
+.details .out2 {
+  border: 1px dashed grey;
+  border-left: 1px solid transparent;
+  padding: 6px 0px;
+  margin: auto;
+  border-radius: 50%;
+  width: 60%;
+  position: relative;
 }
-footer .paragraph
-{
-color: white;
-font-size: 1rem;
-font-weight: 600;
+
+.info {
+  background-color: #3026260a;
+  padding: 200px 0px 50px 0px;
 }
-footer .rules{
-    font-size: 1rem;
-font-weight: 600;
+
+.info .circle {
+  width: 20px;
+  height: 20px;
+  background-color: #f8aa1b;
+  border-radius: 50%;
+  border: 1px dashed lightgray;
+  margin: 10px 0px;
 }
-footer a{
-    text-decoration: none;
-    color:#fff;
-    padding-left: 0.5rem;
+.info button {
+  background: none;
+  border: 1px dashed;
+  border-radius: 50%;
+  position: relative;
+}
+.info .brdr {
+  margin: auto;
+  position: relative;
+  top: 24px;
+  border: 1px dashed lightgray;
+  z-index: -999;
+}
+
+.info .infoYear {
+  bottom: 35px;
+  position: absolute;
+  font-size: 1.1rem;
+}
+
+.about .head {
+  color: limegreen;
+}
+.about .btn {
+  background-color: transparent;
+  border: 1px solid #f8aa1b;
+  border-radius: 15px;
+  padding: 2px 32px;
+  margin-right: 10px;
+  color: #000;
+  position: relative;
+}
+.about img {
+  height: 210px;
+}
+.about p {
+  font-weight: 500;
+}
+.about i {
+  position: absolute;
+  left: 60px;
+  bottom: 29px;
+  cursor: pointer;
+}
+.about clr {
+  clear: both;
+}
+
+.contactus {
+  background-color: #0372b4;
+}
+.contactus h4 {
+  color: #f8aa1b;
+}
+.contactus p,
+a {
+  color: #fff;
+}
+.contactus input {
+  width: 30%;
+  border-radius: 15px;
+  border: 1px solid transparent;
+}
+.contactus ::placeholder {
+  padding: 10px;
+  color: #000;
+}
+.contactus button {
+  background-color: transparent;
+  border: 1px solid #f8aa1b;
+  border-radius: 15px;
+  padding: 2px 32px;
+  margin-right: 10px;
+  color: #fff;
+  position: relative;
+}
+.contactus .icon {
+  position: relative;
+  left: 6px;
+  cursor: pointer;
+  color: #fff;
+}
+.contactus #btnUp {
+  position: fixed;
+  bottom: 350px;
+  left: 50px;
+  z-index: 100;
+  background-color: #f8aa1b;
+  border: 1px solid #000;
+
+  color: #000;
+}
+
+footer {
+  background-color: #0069a7;
+}
+footer .paragraph {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+footer .rules {
+  font-size: 1rem;
+  font-weight: 600;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 0.5rem;
 }
