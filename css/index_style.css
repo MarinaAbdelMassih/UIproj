@@ -95,8 +95,13 @@ header ol {
 .services .serv {
   color: #fff;
   position: absolute;
-  bottom: 20px;
+  bottom: 168px;
   left: 70px;
+}
+.services .dashed{
+  border-right: 2px dashed lightgrey;
+  width: 2px;
+  height: 100px;
 }
 .services .positionImg {
   position: relative;
@@ -105,22 +110,26 @@ header ol {
 .services .green {
   color: green;
 }
+.services .green span {
+  font-weight: 300;
+}
 
 .services .but {
   background-color: transparent;
   border: 1px solid #f8aa1b;
   border-radius: 15px;
   padding: 2px 32px;
-  margin-right: 10px;
-  margin-top: 70px;
+  margin-right: -7px;
+  margin-top: 6px;
   display: flex;
   color: #000;
   position: relative;
+  font-weight: 500;
 }
 .services .ic1 {
   position: relative;
-  left: 97px;
-  bottom: 21px;
+  left: 115px;
+  bottom: 23px;
   cursor: pointer;
   color: green;
 }
@@ -182,8 +191,14 @@ header .overlay {
 .econmic .bgdata {
   background-color: #ffe424;
   padding: 50px 30px;
-  margin: 50px 0px;
+  margin: 50px 0px 10px;
 }
+.econmic .dashed{
+  border-right: 2px dashed lightgrey;
+  width: 2px;
+  height: 100px;
+}
+
 .econmic .icon {
   color: green;
   font-size: 1.5rem;
@@ -193,19 +208,109 @@ header .overlay {
   border: 1px solid #f8aa1b;
   border-radius: 15px;
   padding: 2px 32px;
-  margin-right: 10px;
-  margin-top: 70px;
+  margin-top: 10px;
   display: flex;
   color: #fff;
   position: relative;
 }
 .econmic .ic1 {
-  position: relative;
-  left: 220px;
-  bottom: 21px;
+  position: absolute;
+  right: 120px;
+  bottom: 150px;
   cursor: pointer;
   color: #fff;
 }
+
+.econmic .previ,
+.econmic .next {
+  border: 3px solid #fff;
+  padding: 15px;
+  border-radius: 50%;
+  position: relative;
+  width:10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.econmic .next {
+  display: inline-block;
+
+}
+
+.econmic .previ i {
+  position: absolute;
+  right: 27px;
+  top: 8px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.econmic .next i {
+  position: absolute;
+  left: 27px;
+  top: 8px;
+  cursor: pointer;
+  color: #fff;
+}
+.videoo .head {
+  font-size: 4rem;
+    border-bottom: 13px solid orange;
+    font-weight: 500;
+    width: 60%;
+    border-radius: 4px;
+}
+.videoo .para span {
+  font-weight: 300;
+
+}
+/*.videoo .colVIDEO {
+  z-index: -6;
+}*/
+.videoo .para {
+  width: 150%;
+}
+.videoo .para p{
+  font-size: 1.5rem;
+    padding: 10px;
+    background-color: #fff;
+}
+.videoo video{
+  position: relative;
+  z-index: -8888;
+}
+.videoo .overlay{
+  position: absolute;
+  top: 300px;
+  left: -60px;
+}
+.videoo .overlay p{
+  font-size: 5rem;
+    font-weight: 600;
+}
+
+.videoo .btn {
+  background-color: transparent;
+  border: 1px solid #f8aa1b;
+  border-radius: 15px;
+  padding: 2px 32px;
+  margin-right: 10px;
+  margin-top: 70px;
+  display: flex;
+  color: #000;
+  position: relative;
+  margin: auto;
+  font-weight: 500;
+}
+.videoo .ic1 {
+  position: absolute;
+  left: 495px;
+  bottom: 6px;
+  /*transform: translate(-50px ,50px);*/
+  cursor: pointer;
+  color: #000;
+}
+
+
 
 .details {
   position: relative;
@@ -215,12 +320,10 @@ header .overlay {
 .details .container {
   box-shadow: 10px 10px 6px 6px lightgray;
 }
-.details .row {
-  border: 1px dashed;
-  padding: 30px;
-  margin: 40px;
-  border-top: 1px transparent;
-  border-left: 1px transparent;
+.details .dashed {
+  border-right: 2px dashed lightgrey;
+  width: 2px;
+  height: 100px;
 }
 
 .details .decoration {
@@ -256,6 +359,26 @@ header .overlay {
   border-radius: 50%;
   width: 60%;
   position: relative;
+}
+.details .btn {
+  background-color: transparent;
+  border: 1px solid #f8aa1b;
+  border-radius: 15px;
+  padding: 2px 32px;
+  margin-right: 10px;
+  margin-top: 70px;
+  display: flex;
+  color: #000;
+  position: relative;
+  margin: auto;
+  font-weight: 500;
+}
+.details .ic1 {
+  position: relative;
+  right: 70px;
+  bottom: 21px;
+  cursor: pointer;
+  color: #000;
 }
 
 .info {
