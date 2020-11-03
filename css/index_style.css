@@ -1,7 +1,23 @@
 body {
   direction: rtl;
+}/*
+nav .brdr ::after {
+  content: "";
+  width: 2px;
+  height: 5px;
+  background-color: #000;
+  border-left:1px solid;
+  margin: 0px 10px 0px 0px;
+}*/
+.dropdown-toggle::after {
+  margin-right: 6px;
 }
-
+.colbg{
+  display: flex;
+    margin: auto;
+    background-color: yellow;
+    padding: 10px 15px 10px 100px;
+}
 header .previ,
 header .next {
   border: 3px solid #f8aa1b;
@@ -299,7 +315,9 @@ header .overlay {
   position: relative;
   top: 150px;
   z-index: 9999999;
+  background-color:#fff;
 }
+
 .details .container {
   box-shadow: 10px 10px 6px 6px lightgray;
 }
