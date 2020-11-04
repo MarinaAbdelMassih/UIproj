@@ -583,7 +583,7 @@ footer a {
     transform: translate(279px, -18px);
   }
   .videoo .overlay{
-    transform: translate(-68px, 445px);
+    transform:translate(-768px, -159px);
   }
   .videoo .para {
     width: 150%;
@@ -668,7 +668,7 @@ footer a {
     width: 100%;
   }
   .services .ic1 {
-    transform: translate(285px ,-31px);
+    transform: translate(256px ,-31px);
   }
   .econmic .ic1 {
     transform: translate(343px, -33px);
