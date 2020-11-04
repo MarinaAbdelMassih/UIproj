@@ -595,6 +595,12 @@ footer a {
   .econmic .ic1 {
     transform: translate(120px, -12px);
   }
+  .triangle {
+    border-left: 45px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 42px solid #fff;
+
+  }
 }
 
 
