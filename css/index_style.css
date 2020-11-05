@@ -1,54 +1,81 @@
 body {
   direction: rtl;
-}/*
-nav .brdr ::after {
-  content: "";
-  width: 2px;
-  height: 5px;
-  background-color: #000;
-  border-left:1px solid;
-  margin: 0px 10px 0px 0px;
-}*/
-.brdr , .navbar-light .navbar-nav .nav-link{
+}
+.brdr,
+.navbar-light .navbar-nav .nav-link {
   color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color: #f8aa1b;
+}
+.nav-link.active{
+  color: #f8aa1b !important;
+
+}
+.brdr a::after {
+  content: "|";
+  margin-right: 12px;
+  /*  border-left: 1px solid #fff;
+    margin-left: 5px;*/
+}
+.search {
+  transform: translate(24px, 12px);
+  color: gray;
 }
 .dropdown-toggle::after {
   margin-right: 6px;
 }
-.colbg{
+.colbg {
   display: flex;
-    margin: auto;
-    background-color: yellow;
-    padding: 10px 15px 10px 100px;
+  margin: auto;
+  background-color: yellow;
+  padding: 10px 15px 10px 100px;
 }
 .carousel {
   z-index: -55555;
+}
+.carousel-caption button{
+  background-color: transparent;
+  border: 1px solid #f8aa1b;
+  border-radius: 15px;
+  padding: 2px 32px;
+
+  display: flex;
+  color: #fff;
+  position: relative;
+  font-weight: 500;
+
+}
+.carousel-caption i {
+  transform:translate(4px, -1px);
+    cursor: pointer;
+  color: #fff;
+
 }
 .sectTop {
   margin-top: -166px;
 }
 .header1 {
-  transform: translate(10px, 250px);
+  transform: translate(10px, 175px);
 }
-.header2{
-  transform: translate(15px, 91px);
+.header2 {
+  transform: translate(15px, 190px);
+}
+.header2 .bg {
+  background-color: #fff;
+  width: 99%;
+}
+.header2 .bg a{
+  font-size: 1rem;
 
 }
-/*
-.colnine {
-    background-color: #fff;
-    padding: 9px 0px;
+.header2 .bg3 {
+  background-color: #f8aa1b;
 }
-.brdrafter ::after{
-  content: "";
-  width: 5px;
-  height: 5px;
-  background-color: #0069a7;
-}
-.bgcolor {
-  background-color: #fff;
-}*/
-input ,.form-control {width: 150px !important;
+
+input,
+.form-control {
+  width: 150px !important;
   border-radius: 14px;
 }
 .previi,
@@ -109,20 +136,20 @@ header .ic1 {
 header ol {
   padding-bottom: 150px;
 }
-.navv{
+.navv {
   background-color: #fff;
-    width: 95%;
-    padding: 10px 0px;
+  width: 95%;
+  padding: 10px 0px;
 }
 .triangle {
   position: absolute;
-  left: 2px;
+  left: -8px;
   top: 0px;
   width: 0;
   height: 0;
-  border-left: 52px solid transparent;
-  border-right: 3px solid transparent;
-  border-top: 60px solid #fff;
+  border-left: 31px solid transparent;
+  border-top: 72px solid #fff;
+  z-index: 55555;
 }
 .services img {
   width: 210px;
@@ -136,20 +163,14 @@ header ol {
 }
 .services .serv {
   color: #fff;
-  transform: translate(7px ,-110px);
-  /*
-  position: absolute;
-  bottom: 168px;
-  left: 70px;*/
+  transform: translate(7px, -110px);
 }
-.services .dashed{
+.services .dashed {
   border-right: 2px dashed lightgrey;
   width: 2px;
   height: 100px;
 }
 .services .positionImg {
-  /*position: relative;
-  right: 50px;*/
   text-align: center;
 }
 .services .green {
@@ -172,16 +193,10 @@ header ol {
   font-weight: 500;
 }
 .services .ic1 {
-  /*position: relative;
-  left: 115px;
-  bottom: 23px;*/
-  transform: translate(114px ,-22px);
+  transform: translate(114px, -22px);
   cursor: pointer;
   color: green;
 }
-
-/**/
-
 Edit in JSFiddle Result HTML CSS JavaScript Resources header {
   position: relative;
   background-color: black;
@@ -239,7 +254,7 @@ header .overlay {
   padding: 50px 30px;
   margin: 50px 0px 10px;
 }
-.econmic .dashed{
+.econmic .dashed {
   border-right: 2px dashed lightgrey;
   width: 2px;
   height: 100px;
@@ -260,28 +275,23 @@ header .overlay {
   position: relative;
 }
 .econmic .ic1 {
-  transform: translate(-117px, -265px);
- /* position: absolute;
-  right: 120px;
-  bottom: 150px;*/
+  transform: translate(232px, -21px);
   cursor: pointer;
   color: #fff;
 }
-
 .econmic .previ,
 .econmic .next {
   border: 3px solid #fff;
   padding: 15px;
   border-radius: 50%;
   position: relative;
-  width:10px;
+  width: 10px;
   margin-bottom: 20px;
   cursor: pointer;
   margin-bottom: 20px;
 }
 .econmic .next {
   display: inline-block;
-
 }
 
 .econmic .previ i {
@@ -301,40 +311,32 @@ header .overlay {
 }
 .videoo .head {
   font-size: 4rem;
-    border-bottom: 13px solid orange;
-    font-weight: 500;
-    width: 60%;
-    border-radius: 4px;
+  border-bottom: 13px solid orange;
+  font-weight: 500;
+  width: 60%;
+  border-radius: 4px;
 }
 .videoo .para span {
   font-weight: 300;
-
 }
-/*.videoo .colVIDEO {
-  z-index: -6;
-}*/
 .videoo .para {
   width: 150%;
 }
-.videoo .para p{
+.videoo .para p {
   font-size: 1.5rem;
-    padding: 10px;
-    background-color: #fff;
+  padding: 10px;
+  background-color: #fff;
 }
-.videoo video{
+.videoo video {
   position: relative;
   z-index: -8888;
 }
-.videoo .overlay{
+.videoo .overlay {
   transform: translate(-856px, -243px);
-/*
-  position: absolute;
-  top: 300px;
-  left: -60px;*/
 }
-.videoo .overlay p{
+.videoo .overlay p {
   font-size: 5rem;
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .videoo .btn {
@@ -351,30 +353,15 @@ header .overlay {
 }
 .videoo .ic1 {
   font-size: 1.4rem;
-  /*
-    transform: translate(475px, -26px);
-  position: absolute;
-  left: 495px;
-  bottom: 6px;*/
-  transform:translate(476px ,-25px);
-    cursor: pointer;
-  color: #000;
-  /*transform: translate(100%, 20px) translateX(-85px);
-  font-size: 1.4rem;
+  transform: translate(476px, -25px);
   cursor: pointer;
   color: #000;
-  position: absolute;
-  right: 50%;
-  top: -50%;*/
 }
-
-
 
 .details {
   position: relative;
-  top: 150px;
   z-index: 9999999;
-  background-color:#fff;
+  background-color: #fff;
 }
 
 .details .container {
@@ -425,8 +412,6 @@ header .overlay {
   border: 1px solid #f8aa1b;
   border-radius: 15px;
   padding: 2px 32px;
-  /*margin-right: 10px;
-  margin-top: 70px;*/
   display: flex;
   color: #000;
   margin: auto;
@@ -435,9 +420,6 @@ header .overlay {
 .details .ic1 {
   transform: translate(-71px, -25px);
   font-size: 1.4rem;
-  /*right: 70px;
-  position: relative;
-  bottom: 21px;*/
   cursor: pointer;
   color: #000;
 }
@@ -501,8 +483,6 @@ header .overlay {
 .about i {
   font-size: 1.4rem;
   transform: translate(9px, 0px);
-  /*left: 63px;
-  bottom: 19px;*/
   cursor: pointer;
 }
 .about clr {
@@ -577,32 +557,29 @@ footer a {
       font-size: 0.7rem;
   }
   .details .ic1 {
-    transform: translate(-60px, -18px);
+      transform: translate(-60px, -18px);
   }
   .videoo .ic1 {
-    transform: translate(279px, -18px);
+      transform: translate(279px, -18px);
   }
-  .videoo .overlay{
-    transform:translate(-768px, -159px);
+  .videoo .overlay {
+      transform: translate(-768px, -159px);
   }
   .videoo .para {
-    width: 150%;
+      width: 150%;
   }
   .services .ic1 {
-  
-    transform: translate(564px ,-12px);
+      transform: translate(564px, -12px);
   }
   .econmic .ic1 {
-    transform: translate(120px, -12px);
+      transform: translate(120px, -12px);
   }
   .triangle {
-    border-left: 45px solid transparent;
-    border-right: 16px solid transparent;
-    border-top: 42px solid #fff;
-
+      border-left: 45px solid transparent;
+      border-right: 16px solid transparent;
+      border-top: 42px solid #fff;
   }
 }
-
 
 @media (max-width: 1024px) {
   html,
@@ -610,23 +587,22 @@ footer a {
       font-size: 0.7rem;
   }
   .details .ic1 {
-    transform: translate(-60px, -18px);
+      transform: translate(-60px, -18px);
   }
   .videoo .ic1 {
-    transform: translate(279px, -18px);
+      transform: translate(279px, -18px);
   }
-  .videoo .overlay{
-    transform: translate(-68px, 445px);
+  .videoo .overlay {
+      transform: translate(-68px, 445px);
   }
   .videoo .para {
-    width: 150%;
+      width: 150%;
   }
   .services .ic1 {
-  
-    transform: translate(564px ,-12px);
+      transform: translate(564px, -12px);
   }
   .econmic .ic1 {
-    transform: translate(120px, -12px);
+      transform: translate(120px, -12px);
   }
 }
 
@@ -636,24 +612,23 @@ footer a {
       font-size: 1rem;
   }
   .details .ic1 {
-    transform: translate(-71px, -25px);
+      transform: translate(-71px, -25px);
   }
   .videoo .ic1 {
-    transform: translate(176px, -24px);
+      transform: translate(176px, -24px);
   }
-  .videoo .overlay{
-    transform: translate(-245px, -218px);
+  .videoo .overlay {
+      transform: translate(-245px, -218px);
   }
   .videoo .para {
-    width: 100%;
+      width: 100%;
   }
   .services .ic1 {
-    transform: translate(345px ,-21px);
+      transform: translate(345px, -21px);
   }
   .econmic .ic1 {
-    transform: translate(393px, -23px);
+      transform: translate(393px, -23px);
   }
-  
 }
 
 @media (max-width: 575px) {
@@ -662,23 +637,21 @@ footer a {
       font-size: 1.2rem;
   }
   .details .ic1 {
-    transform: translate(-78px, -29px);
+      transform: translate(-78px, -29px);
   }
   .videoo .ic1 {
-    transform: translate(150px, -28px);    
+      transform: translate(150px, -28px);
   }
-  .videoo .overlay{
-    transform: translate(-117px, -265px);
+  .videoo .overlay {
+      transform: translate(-117px, -265px);
   }
   .videoo .para {
-    width: 100%;
+      width: 100%;
   }
   .services .ic1 {
-    transform: translate(256px ,-31px);
+      transform: translate(256px, -31px);
   }
   .econmic .ic1 {
-    transform: translate(343px, -33px);
+      transform: translate(343px, -33px);
   }
-  
 }
-
